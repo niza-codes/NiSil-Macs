@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NISIL MACS — Apple-style Store</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="nisilmacslogo.png" class="logo-img" alt="NISIL MACS Logo">
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <a href="shop.html">Mac</a>
+      <a href="#">iPad</a>
+      <a href="#">iPhone</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="services.html">Support</a>
+    </nav>
+
+    <!-- Icons -->
+    <div class="nav-utils">
+      <button class="icon-btn" aria-label="Search">🔍</button>
+      <button class="icon-btn" onclick="window.location.href='cart.html'" aria-label="Cart">🛒</button>
+      <button class="icon-btn menu-btn">☰</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<main>
+<section class="hero">
+
+  <div class="hero-inner">
+    <h1>Discover the latest Mac lineup</h1>
+    <p>Performance for pros. Design for everyone. Shop the full NISIL MACS Collection.</p>
+
+    <div class="hero-ctas">
+      <a class="btn primary" href="shop.html">Shop Mac</a>
+      <a class="btn ghost" href="shop.html">Learn more</a>
+    </div>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="hero-image">
+    <div class="hero-slider" id="slider">
+
+      <div class="slider-track">
+
+        <div class="slide active">
+          <img src="assets/img/13mbp25.jpg" alt="MacBook Pro">
+        </div>
+
+        <div class="slide">
+          <img src="assets/img/imac.jpg" alt="iMac">
+        </div>
+
+        <div class="slide">
+          <img src="assets/img/macmini.jpg" alt="Mac mini">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= STRIP ================= -->
+<section class="strip">
+  <div class="strip-item">
+    <h3>MacBook Pro</h3>
+    <p>Power to go further.</p>
+  </div>
+  <div class="strip-item">
+    <h3>iMac</h3>
+    <p>All-in-one desktop.</p>
+  </div>
+  <div class="strip-item">
+    <h3>Mac mini</h3>
+    <p>Small. Mighty.</p>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products">
+  <h2 class="section-title">Featured</h2>
+
+  <div class="grid">
+
+    <!-- MacBook -->
+    <article class="card">
+      <div class="card-media">
+        <img src="assets/img/13mbp25.jpg" class="card-image">
+      </div>
+      <div class="card-body">
+        <h3>MacBook Pro 14"</h3>
+        <p class="muted">From K 9,999</p>
+        <div class="card-actions">
+          <a class="link" href="shop.html">Buy</a>
+          <a class="link" href="shop.html">Learn</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- iMac -->
+    <article class="card">
+      <div class="card-media">
+        <img src="assets/img/imac.jpg" class="card-image">
+      </div>
+      <div class="card-body">
+        <h3>iMac 24"</h3>
+        <p class="muted">From K 7,499</p>
+        <div class="card-actions">
+          <a class="link" href="shop.html">Buy</a>
+          <a class="link" href="shop.html">Learn</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Mac mini -->
+    <article class="card">
+      <div class="card-media">
+        <img src="assets/img/macmini.jpg" class="card-image">
+      </div>
+      <div class="card-body">
+        <h3>Mac mini</h3>
+        <p class="muted">From K 2,999</p>
+        <div class="card-actions">
+          <a class="link" href="shop.html">Buy</a>
+          <a class="link" href="shop.html">Learn</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Accessories -->
+    <article class="card">
+      <div class="card-media">
+        <img src="assets/img/magicmouse.png" class="card-image">
+      </div>
+      <div class="card-body">
+        <h3>Accessories</h3>
+        <p class="muted">Cables, adapters & more</p>
+        <div class="card-actions">
+          <a class="link" href="accessories.html">Shop</a>
+          <a class="link" href="accessories.html">Learn</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-inner">
+    <div class="footer-col shop">
+      <h4>Shop</h4>
+      <a href="shop.html">Mac</a>
+      <a href="accessories.html">Accessories</a>
+    </div>
+
+    <div class="footer-col services">
+      <h4>Services</h4>
+      <a href="services.html">Support</a>
+      <a href="#">Repairs</a>
+      <a href="#">Order status</a>
+    </div>
+  </div>
+
+  <div class="footer-brand">
+    <a class="logo small" href="index.html">
+      <img src="nisilmacslogo1.png" class="logo-img">
+    </a>
+    <p class="muted">Authorized Apple Reseller</p>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> NISIL MACS
+  </div>
+
+</footer>
+
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Mobile Menu */
+const menuBtn = document.querySelector('.menu-btn');
+const mainNav = document.querySelector('.main-nav');
+
+menuBtn.addEventListener('click', () => {
+  mainNav.classList.toggle('open');
+});
+
+/* SLIDER */
+const slides = document.querySelectorAll('.slide');
+const track = document.querySelector('.slider-track');
+let index = 0;
+
+function showSlide(i){
+  slides.forEach(s => s.classList.remove('active'));
+  slides[i].classList.add('active');
+  track.style.transform = `translateX(-${i * 100}%)`;
+}
+
+function nextSlide(){
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+setInterval(nextSlide, 2500);
+
+/* SWIPE SUPPORT */
+let startX = 0;
+
+document.getElementById("slider").addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+document.getElementById("slider").addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if(startX - endX > 50){
+    nextSlide();
+  }
+  if(endX - startX > 50){
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+});
+</script>
+
+</body>
+</html>
